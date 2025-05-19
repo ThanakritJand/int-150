@@ -1,11 +1,8 @@
-// select other class Benz
-function showBrand(brand){
-    const brands = ['mercedes','amg','maybach']
-    brands.forEach(b => {
-        document.getElementById(b).classList.add('hidden');
-    });
-    document.getElementById(brand).classList.remove('hidden')
-}
-window.onload = () => {
-    showBrand("mercedes");
-};
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('#hamburger');
+  const nav = document.querySelector('.nav');
+
+  hamburger.addEventListener('click', function () {
+    nav.classList.toggle('active');
+  });
+});

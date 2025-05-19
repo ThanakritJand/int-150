@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: .875em;
+        }
+
+        label{
+          font-weight: 600;
+          flex: 0 0 0.5;
+        }
+        input[type="text"]{
+          display: flex;
+          margin: .875em 0;
+          border: 1px solid #bdbdbd;
+          padding: .875em;
+          border-radius: 4px;
+          transition: .5s all ease-in-out;
+          width: 100%;
+        }
+        input[type="checkbox"]{
+          border: 1px solid #bdbdbd;
+        }
+        .checkbox {
+          display: flex;
+          margin-bottom: 1em;
+          label{
+            font-weight: 500;
+            margin-left:.2em;
+          }
+        }
+        .button{
+          padding: 11px 23px;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          font-weight: 700;
+          color: #555;
+        }
+        input[type="text"]:focus{
+          border: 2px solid #0f699d;
+          outline: none;
+        }
+        input[type="text"]:hover{
+          border: 2px solid #0f699d;
+          outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+      <div class="field">
+        <label>First Name</label>
+        <input type="text" name="first-name" placeholder="First Name">
+      </div>
+      <div class="field">
+        <label>Last Name</label>
+        <input type="text" name="last-name" placeholder="Last Name">
+      </div>
+      <div class="field">
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>I agree to the Terms and Conditions</label>
+        </div>
+      </div>
+      <button class="button" type="submit">Submit</button>
+    </form>
+</body>
+</html>
